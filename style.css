@@ -1,0 +1,94 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(35deg,slateblue, orangered);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font: bold 2.5rem 'georgia', arial, helvetica, sans-serif;
+}
+#timeBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    position: relative;
+    height: 50px;
+    width: 70px;
+    border: 1px dashed rgba(81, 184, 170);
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 1rem 0.5rem;
+    font: bold 2.5rem 'georgia', arial, helvetica, sans-serif;
+    text-align: center;
+}
+
+input[disabled] {
+    /* cursor:  */
+    color: black;
+}
+
+input:focus {
+    border: 0;
+    outline: 0;
+}
+input::placeholder {
+    color: black;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 2rem 0 0;
+    transition: all 0.3s ease;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background: rgba(81, 184, 170, 0.99);
+    color: white;
+    font: bold 1rem 'helvetica';
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 0.95;
+    opacity: 0.9;
+}
+button:focus {
+    background: rgba(81, 184, 170, 0.5);
+    border: 2px dotted rgba(81, 184, 170);
+}
+
+button:nth-child(1) {
+    flex: 0.38;
+}
+button:nth-child(2) {
+    display: none;
+}
+button:nth-child(3) {
+    display: none;
+}
+button:nth-child(4) {
+    display: none;
+}
+
+button:not(:last-child) {
+    margin-right: 0.4rem;
+}
